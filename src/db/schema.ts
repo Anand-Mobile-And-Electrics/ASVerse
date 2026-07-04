@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   boolean,
   check,
@@ -378,3 +379,8 @@ export const auditLogs = pgTable("audit_logs", {
   details: jsonb("details").notNull().default(sql`'{}'::jsonb`),
   createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
 });
+=======
+// Keep the schema entrypoint present so models can define tables and run
+// `npx drizzle-kit push` without bootstrapping Drizzle config first.
+export {};
+>>>>>>> 399ff1e16a62994408dc07945c77ad211ed6c355

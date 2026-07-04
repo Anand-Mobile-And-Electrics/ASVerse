@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+<<<<<<< HEAD
     "bcryptjs": "^3.0.3",
     "dotenv": "17.3.1",
     "drizzle-orm": "0.45.2",
@@ -17,6 +18,26 @@
     "react": "19.2.6",
     "react-dom": "19.2.6",
     "zod": "^4.4.3"
+=======
+    "@sentry/nextjs": "^10.63.0",
+    "@types/md5": "^2.3.6",
+    "@types/qrcode": "^1.5.6",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "17.3.1",
+    "drizzle-orm": "0.45.2",
+    "lucide-react": "^1.23.0",
+    "md5": "^2.3.0",
+    "next": "16.2.6",
+    "pdf-lib": "^1.17.1",
+    "pg": "8.20.0",
+    "qrcode": "^1.5.4",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3",
+    "zustand": "^5.0.14"
+>>>>>>> 399ff1e16a62994408dc07945c77ad211ed6c355
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.1.17",

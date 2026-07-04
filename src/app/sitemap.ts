@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { db } from "@/db";
 import { contents, liveEvents } from "@/db/schema";
 import type { MetadataRoute } from "next";
@@ -21,4 +22,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: row.updatedAt,
     })),
   ];
+=======
+import type { MetadataRoute } from "next";
+import { blogCatalog } from "@/features/blog/post-catalog";
+import { toolCatalog, toolCategories } from "@/features/tools/tool-catalog";
+import { absoluteUrl } from "@/lib/site";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const staticRoutes = ["/", "/tools", "/blog"];
+
+  const toolCategoryRoutes = toolCategories.map((category) => `/tools/${category.slug}`);
+  const toolRoutes = toolCatalog.map((tool) => `/tools/tool/${tool.slug}`);
+  const blogRoutes = blogCatalog.map((post) => `/blog/${post.slug}`);
+
+  return [...staticRoutes, ...toolCategoryRoutes, ...toolRoutes, ...blogRoutes].map((path) => ({
+    url: absoluteUrl(path),
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: path === "/" ? 1 : 0.8,
+  }));
+>>>>>>> 399ff1e16a62994408dc07945c77ad211ed6c355
 }

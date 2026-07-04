@@ -1,1 +1,21 @@
 @import "tailwindcss";
+<<<<<<< HEAD
+=======
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+>>>>>>> 399ff1e16a62994408dc07945c77ad211ed6c355
