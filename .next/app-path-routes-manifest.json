@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/health/route": "/api/health",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/category/[category]/page": "/blog/category/[category]",
+  "/blog/page": "/blog",
+  "/blog/tag/[tag]/page": "/blog/tag/[tag]",
+  "/page": "/",
+  "/robots.txt/route": "/robots.txt",
+  "/rss.xml/route": "/rss.xml",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/tools/[category]/page": "/tools/[category]",
+  "/tools/page": "/tools",
+  "/tools/tool/[slug]/page": "/tools/tool/[slug]"
+}
